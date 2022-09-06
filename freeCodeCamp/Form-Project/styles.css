@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    /* height: 100vh; */
+    background-image: linear-gradient(
+        120deg,
+        rgba(34, 34, 155, 0.8),
+        rgba(63, 63, 73, 0.7)   
+    ) ,url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    
+}
+#title {
+    font-family: Tahoma;
+    margin: 1rem;
+    color: aliceblue;
+
+}
+#description {
+    font-family: Tahoma;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: aliceblue;
+
+}
+.container {
+    width: 90%;
+    margin: 0rem auto 0 auto;
+    max-width: 720px;
+    text-align: center;  
+}
+
+button {
+    border: none;
+  }
+
+form {
+    
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgba(29, 29, 65, 0.8);
+    border-radius: 0.5rem;
+    color: aliceblue;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+    
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 2rem;
+
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 1rem ;
+}
+
+input, select{
+    width: 100%;
+    margin: 10px 0 0 0;
+    border-radius: 0.25rem;
+    border: none;
+    padding: 0.5rem;
+    font-size: 16px;
+    background-color: rgb(236, 236, 236);
+}
+
+
+.inline {
+    width: unset;
+    margin: 0 0.5rem 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: green;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+    border:none;
+}
+
+textarea{
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+    margin-top: 2rem;
+    font-size: 15px;
+    font-family: "Verdana", sans-serif;
+}

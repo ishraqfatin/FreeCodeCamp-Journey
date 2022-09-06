@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <fieldset>
+          <label
+            >Name
+            <input
+              id="name-label"
+              type="text"
+              placeholder="Enter Your Name"
+              required
+          /></label>
+          <label
+            >Email
+            <input
+              id="email-label"
+              type="email"
+              placeholder="Enter Your Email"
+              required
+          /></label>
+          <label
+            >Age (optional)
+            <input
+              id="number-label"
+              type="number"
+              min="13"
+              max="90"
+              placeholder="Age"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <label>Which option best describes your current role? </label>
+          <select id="dropdown" required>
+            <option value="">Select an option</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label> <input class="inline" type="radio" name="recommend" /> Definitely </label>
+          <label> <input class="inline" type="radio" name="recommend" /> Maybe </label>
+          <label> <input class="inline" type="radio" name="recommend" /> Not sure </label>
+        </fieldset>
+        <fieldset>
+          <label>What is your favorite feature of freeCodeCamp?</label>
+          <select id="feature" required>
+            <option value="">(select one)</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label>
+            <input class="inline" type="checkbox" value="1" /> Front-end Projects
+          </label>
+          <label> <input class="inline" type="checkbox" value="2" /> Back-end Projects </label>
+          <label>
+            <input class="inline" type="checkbox" value="3" /> Data Visualization
+          </label>
+          <label> <input class="inline" type="checkbox" value="4" /> Forum </label>
+        </fieldset>
+        <fieldset>
+          <label
+            >Any comments or suggestions?
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="3"
+            ></textarea>
+          </label>
+        </fieldset>
+        <input type="Submit" id="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

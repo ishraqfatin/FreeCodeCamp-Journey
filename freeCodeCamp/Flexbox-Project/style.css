@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0 100px;
+    margin:0;
+
+}
+#title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    /* margin: 0 auto 0 auto; */
+    padding: 30px;
+    background-color: aliceblue;
+}
+header h1, header p{
+    font-family: "Helvetica", sans-serif;
+}
+header h1{
+    font-size: 50px;
+}
+header p{
+    margin-top: 10px;
+    font-style: italic;
+}
+
+#main{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid rgb(144, 151, 156);
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 20px;
+
+
+}
+#img-div{
+    max-width: 100%;
+    padding: 10%;
+      
+}
+figcaption{
+    font-size: 20px;
+    text-align: center;
+    font-family: "Calibri", sans-serif;
+    margin: 20px auto 0 auto;
+    font-weight: 100;
+}
+#tribute-info{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Calibri light", sans-serif ;
+    /* background-color: aquamarine; */
+    padding: 20px;
+}
+#tribute-info h2{
+    font-size: 30px;
+    color: rgb(87, 86, 86);
+
+}
+#main p{
+    font-style: italic;
+    font-family: sans-serif;
+    color: grey;
+}
+
+ul{
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+li{
+    margin: 10px auto 10px auto;
+    font-size: 20px;
+}
+
+#image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0px 10px 0.1px rgb(168, 168, 168);
+}
+
+footer{
+    margin: 20px auto;
+    font-size: 16px;
+}
+a{
+    color: black;
+}
