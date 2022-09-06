@@ -21,7 +21,7 @@
     background-color: #202020;
     color: #fff;
     border-bottom: 4px solid #47d3fd;
-    transition: 0.2s;
+    transition: 0.5s;
   }
   .header p{
     margin-top: 20px;
@@ -85,5 +85,5 @@
     padding: 20px;
   }
   footer a{
-    color: #f5f6f7;
+    color: #d7c7f7;
   }
