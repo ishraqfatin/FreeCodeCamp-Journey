@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-snap-align: 1000px;
+}
+
+body{
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #fffbf6;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+#navbar{
+    background-color: #fffbf6;
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    overflow: hidden;
+
+}
+
+.nav-div a{
+    transition: 0.18s;
+    display: block;
+    padding: 10px 30px;
+    color: #3a3b3f;
+    text-decoration: none;
+    cursor: pointer;
+    border-top:  1px solid #4d4e53;
+    overflow-x: hidden;
+    text-align: left;
+}
+.nav-div a:last-of-type{
+    border-bottom: 1px solid #4d4e53;
+}
+.nav-div a:hover{
+    transform: scale(1.158);
+    background-color: black;
+    color: orangered;
+}
+
+#navbar header{
+    display: block;
+    padding: 30px 30px;
+    text-align: center;
+    font-weight: 100;
+}
+
+#main-doc header{
+    /* display: block; */
+    font-weight: 100;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#main-doc p{
+    font-weight: 100;
+    /* padding: 10px 20px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+#main-doc ul{
+    padding: 10px 50px;
+}
+
+code{
+    background-color: #f0ece8;
+    display: block;
+    text-align: left;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.326s;
+}
+code:hover{
+    background-color: black;
+    font-weight: bold;
+    color: orangered;
+    cursor: text;
+    
+}
+
+#main-doc {
+    color: #4d4e53;
+    margin-left: 300px;
+    padding: 30px;
+    background-color: #ffffff;
+
+  }
+
+@media(max-width: 800px){
+    #navbar{
+        width: 100%;
+        height: 260px;
+        z-index: -1;
+        /* background-color: rgb(212, 0, 255); */
+        /* border-bottom: 1px solid grey; */
+        border-right: none;
+    }
+    .nav-div{
+        width: 100%;
+        height: 60%;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+    }
+    .nav-div a:hover{
+        transform: scale(1.0);
+        background-color: black;
+        color: orangered;
+    }
+    .nav-div a:last-of-type{
+        border-bottom: none;
+    }
+    #main-doc{
+        display: block;
+        margin-left: 0px;
+        margin-top: 260px; 
+        box-shadow: 0 0 5px 2px rgb(184, 184, 184);
+        border-radius: 10px 10px 0 0;   
+        
+        
+    }
+}
