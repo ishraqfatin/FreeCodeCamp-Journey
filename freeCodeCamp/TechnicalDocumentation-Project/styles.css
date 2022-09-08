@@ -48,10 +48,13 @@ body{
     color: orangered;
 }
 
-#navbar header{
+#navbar h1{
+    font-family: "Tahoma", sans-serif;
     display: block;
     padding: 30px 30px;
     text-align: center;
+    color: rgb(65, 61, 61);
+    font-size: 30px;
     font-weight: 100;
 }
 
