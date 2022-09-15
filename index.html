@@ -1,81 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="./img/2.png" />
-    <title>WebDev Journey</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="header">
-      <h1>Welcome to my Web Development Journey</h1>
-      <p>All the certification projects can be explored below</p>
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#welcome-section">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-
-    <div class="gallery">
-      <a
-        class="card"
-        href="./freeCodeCamp/Form-Project/index.html"
-        target="_blank"
-      >
-        <div>
-          <img src="./img/1.png" alt="" />
-          <div class="container">
-            <p>Survey Form</p>
-          </div>
-        </div>
-      </a>
-
-      <a
-        class="card"
-        href="./freeCodeCamp/Flexbox-Project/index.html"
-        target="_blank"
-      >
-        <div>
-          <img src="./img/2.png" alt="" />
-          <div class="container">
-            <p>Tribute Page</p>
-          </div>
-        </div>
-      </a>
-
-      <a
-        class="card"
-        href="./freeCodeCamp/TechnicalDocumentation-Project/index.html"
-        target="_blank"
-      >
-        <div>
-          <img src="./img/3.png" alt="" />
-          <div class="container">
-            <p>Technical Documentation</p>
-          </div>
-        </div>
-      </a>
-      <a
-      class="card"
-      href="./freeCodeCamp/ProductLandingPage-Project/index.html"
-      target="_blank"
-    >
-      <div>
-        <img src="./img/4.png" alt="" />
-        <div class="container">
-          <p>Product Landing Page</p>
-        </div>
-      </div>
-    </a>
+    <div id="welcome-section">
+      <h1>Hey I am Fatin</h1>
+      <p>And This Is My WebDev Journey</p>
     </div>
-    <footer>
-      <address>
-        The projects are part of the
+    <div id="projects">
+      <div id="projects-header">
+        <h2>
+          These are some of my
+          <a href="https://www.freecodecamp.org/learn/" target="_blank"
+            >FreeCodeCamp</a
+          >
+          Projects
+        </h2>
+      </div>
+      <div class="gallery">
         <a
-          id="footer"
-          href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+          class="project-tile"
+          href="./freeCodeCamp/Form-Project/index.html"
           target="_blank"
-          >FreeCodeCamp</a
         >
-        courses.
-      </address>
-    </footer>
+          <div>
+            <img src="./img/1.png" alt="" />
+            <div class="container">
+              <p>Survey Form</p>
+            </div>
+          </div>
+        </a>
+        <a
+          class="project-tile"
+          href="./freeCodeCamp/Flexbox-Project/index.html"
+          target="_blank"
+        >
+          <div>
+            <img src="./img/2.png" alt="" />
+            <div class="container">
+              <p>Tribute Page</p>
+            </div>
+          </div>
+        </a>
+        <a
+          class="project-tile"
+          href="./freeCodeCamp/TechnicalDocumentation-Project/index.html"
+          target="_blank"
+        >
+          <div>
+            <img src="./img/3.png" alt="" />
+            <div class="container">
+              <p>Technical Documentation</p>
+            </div>
+          </div>
+        </a>
+        <a
+          class="project-tile"
+          href="./freeCodeCamp/ProductLandingPage-Project/index.html"
+          target="_blank"
+        >
+          <div>
+            <img src="./img/4.png" alt="" />
+            <div class="container">
+              <p>Product Landing Page</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div id="contacts">
+      <div id="contacts-header">
+        <h2>Let's work together...</h2>
+        <p>You can reach me at</p>
+      </div>
+      <div id="contacts-links">
+        <a
+          href="https://github.com/ishraqfatin"
+          id="profile-link"
+          target="_blank"
+        >
+          <img class="icon" src="./img/icon1.png" alt="githubicon" /> Github</a
+        >
+        <a
+          href="https://www.linkedin.com/in/ishraqfatin/"
+          id="profile-link"
+          target="_blank"
+        >
+          <img class="icon" src="./img/icon2.png" alt="githubicon" /> LinkedIn
+        </a>
+        <a
+          href="mailto:ishraqfatin2510@gmail.com"
+          id="profile-link"
+          target="_blank">
+          <img class="icon" src="./img/icon3.png" alt="githubicon" /> Email</a
+        >
+      </div>
+    </div>
   </body>
 </html>
