@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* To remove number wheel */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* ----------------------- */
+
+body,
+html {
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  /* height: 0px; */
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  /* margin: 0 auto; */
+}
+.main img {
+  max-width: 40%;
+  height: 100vh;
+  align-self: flex-start;
+  object-fit: cover;
+}
+.userInfo {
+  height: 100vh;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 5px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.userInfo p {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: hsl(278, 68%, 11%);
+}
+input {
+  font-family: inherit;
+  padding: 8px;
+  text-align: left;
+  border-radius: 8px;
+  border: 1px solid hsl(270, 2%, 82%);
+  color: hsl(279, 6%, 55%);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  outline: none;
+}
+input:focus {
+  color: black;
+  border: 1px solid hsl(278, 94%, 30%);
+}
+input:invalid {
+  border-color: hsl(0, 100%, 66%);
+}
+
+#submitBtn {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(278, 68%, 11%);
+  border: none;
+  margin-top: 30px;
+  padding: 15px;
+}
+#submitBtn:hover {
+  background-color: hsl(0, 0%, 3%);
+  color: orchid;
+  cursor: pointer;
+}
+
+#dateCvcSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: dense;
+  gap: 10px;
+}
+#monthInput,
+#yearInput {
+  width: 4em;
+}
+#cvcInput {
+  width: 100%;
+}
+.errorMessage {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: none;
+  color: hsl(0, 100%, 66%);
+  margin-bottom: 10px;
+}
+
+ .card {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  color: hsl(0, 0%, 100%);
+  align-items: flex-start;
+}
+
+.front {
+  left: 150px;
+  top: 120px;
+  height: 245px;
+  width: 447px;
+  background-image: url(./images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  gap: 10px;
+}
+.back {
+  left: 200px;
+  top: 400px;
+  height: 245px;
+  width: 447px;
+  background-image: url(./images/bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-right: 60px;
+  justify-content: center;
+  text-align: right;
+}
+
+.logo {
+  width: 100%;
+  align-items: flex-start;
+  height: 50%;
+}
+
+.cardInfo {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.sub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  align-items: bottom;
+  justify-content: space-between;
+}
+#numOnCard {
+  letter-spacing: 6px;
+  margin-top: 20px;
+  vertical-align: bottom;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#nameOnCard,
+#expOnCard,
+#cvvOnCard {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+#cvvOnCard{
+  align-self: flex-end;
+}
+.front,
+.back {
+  box-shadow: 0 0 10px 0px hsla(285, 80%, 2%, 0.404);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 690px) {
+  .card {
+    width: 60%;
+    
+  }
+  .front {
+    left: 15px;
+    top: 120px;
+  }
+  .back {
+    left: 15px;
+    top: 400px;
+  }
+  .front,
+  .back {
+    flex-shrink: 2px;
+  }
+  #numOnCard{
+    font-size: 12px;
+    letter-spacing: 2px;
+
+  }
+  #nameOnCard,
+  #expOnCard,
+  #cvvOnCard {
+  font-size: 10px;
+  letter-spacing: 2px;
+} 
+
+}
