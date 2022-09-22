@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Link](https://github.com/ishraqfatin/webDev/tree/main/frontendMentor/interactiveCardInfo)
-- Live Site URL: [Link](https://ishraqfatin.github.io/webDev/)
+- Live Site URL: [Link](https://ishraqfatin.github.io/webDev/frontendMentor/interactiveCardInfo/index.html)
 
 ## My process
 
