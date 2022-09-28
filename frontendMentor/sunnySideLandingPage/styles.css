@@ -222,9 +222,14 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 #client-img {
-  width: 20%;
+  width: 100px;
+  border-radius: 50%;
+}
+#client-imgh {
+  width: 144px;
   border-radius: 50%;
 }
 .comments {
