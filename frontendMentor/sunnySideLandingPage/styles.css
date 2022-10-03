@@ -16,6 +16,9 @@ body {
 .hamburger {
   display: none;
 }
+#mobilemenu {
+  display: none;
+}
 
 #header {
   background-image: url(./images/desktop/image-header.jpg);
@@ -366,6 +369,9 @@ body {
     justify-content: end;
     padding-right: 20px;
   }
+  .hamburger input:active {
+    filter: opacity(70%);
+  }
 
   .section1 {
     grid-template-columns: 1fr;
@@ -395,7 +401,7 @@ body {
     text-align: center;
   }
 
-  .section3 .sectionheader{
+  .section3 .sectionheader {
     font-size: 1.5rem;
   }
 
@@ -424,5 +430,58 @@ body {
   }
   .section4 img {
     width: 100%;
+  }
+
+  #mobilemenu {
+    z-index: 1;
+    position: absolute;
+    top: 12%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 50vh;
+    transform-origin: top right;
+  }
+  .menulist {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    height: 100%;
+    min-height: 312px;
+    max-height: 320px;
+    border-radius: 5px 0 5px 5px;
+  }
+  .listitem a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 600;
+  }
+  #contact a {
+    background-color: hsl(51, 100%, 49%);
+    text-transform: uppercase;
+    font-family: "Fraunces";
+    font-size: 0.9rem;
+    padding: 20px;
+  }
+  #contact a:hover {
+    background-color: hsl(51, 82%, 67%);
+    color: unset;
+  }
+  #triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid rgb(255, 255, 255);
+    border-left: 20px solid transparent;
+    align-self: flex-end;
   }
 }

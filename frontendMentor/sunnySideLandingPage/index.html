@@ -45,17 +45,17 @@
         </div>
 
         <ul class="navlist">
-          <li class="navitem"><a href="">About</a></li>
-          <li class="navitem"><a href="">Services</a></li>
-          <li class="navitem"><a href="">Projects</a></li>
-          <li class="navitem" id="contact"><a href="">Contact</a></li>
+          <li class="navitem"><a href="#about">About</a></li>
+          <li class="navitem"><a href="#services">Services</a></li>
+          <li class="navitem"><a href="#projects">Projects</a></li>
+          <li class="navitem" id="contact"><a href="#contacts">Contact</a></li>
         </ul>
-        <div class="hamburger">
-          <img src="./images/icon-hamburger.svg" alt="menu" />
+        <div class="hamburger" id="burgermenu">
+          <input type="image" src="./images/icon-hamburger.svg" alt="menu" />
         </div>
       </nav>
 
-      <div class="intro">
+      <div class="intro" id="introsection">
         <h1 id="headertext">We are creatives</h1>
         <img
           src="./images/icon-arrow-down.svg"
@@ -63,10 +63,19 @@
           id="arrowdown"
         />
       </div>
+      <div id="mobilemenu">
+        <div id="triangle"></div>
+        <ul class="menulist">
+          <li class="listitem"><a href="#about">About</a></li>
+          <li class="listitem"><a href="#services">Services</a></li>
+          <li class="listitem"><a href="#projects">Projects</a></li>
+          <li class="listitem" id="contact"><a href="#contacts">Contact</a></li>
+        </ul>
+      </div>
     </header>
 
     <main id="main">
-      <section class="section1">
+      <section class="section1" id="about">
         <div id="img1-text">
           <h2 class="sectionheader">Transform your brand</h2>
           <p class="sectioncontent">
@@ -76,12 +85,8 @@
           </p>
           <a href="" target="_blank" class="learn-more-link">Learn More</a>
         </div>
-        <div id="img1">
-          
-        </div>
-        <div id="img2">
-          
-        </div>
+        <div id="img1"></div>
+        <div id="img2"></div>
         <div id="img2-text">
           <h2 class="sectionheader">Stand out to the right audience</h2>
           <p class="sectioncontent">
@@ -92,7 +97,7 @@
           <a href="" target="_blank" class="learn-more-link">Learn More</a>
         </div>
       </section>
-      <section class="section2">
+      <section class="section2" id="projects">
         <div id="graphic-design">
           <h2 class="sectionheader">Graphic Design</h2>
           <p>
@@ -109,7 +114,7 @@
           </p>
         </div>
       </section>
-      <section class="section3">
+      <section class="section3" id="services">
         <h2 class="sectionheader">Client Testimonials</h2>
         <div class="client">
           <div class="client a">
@@ -169,27 +174,29 @@
     </main>
 
     <footer id="footer">
-      <div class="footer-logo">
+      <div class="footer-logo" id="contacts">
         <img src="./images/footerlogo.svg" alt="footer-logo" id="logo2" />
       </div>
       <div id="footer-links">
         <ul id="links-list">
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Projects</a></li>
+          <li>
+            <a href="https://www.sunnyside.shop/" target="_blank">About</a>
+          </li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
       </div>
       <div id="social">
-        <a href="" target="_blank"
+        <a href="https://www.facebook.com/zuck/" target="_blank"
           ><img src="./images/icon-facebook.svg" alt="fb" class="socialicons"
         /></a>
-        <a href="" target="_blank"
+        <a href="https://www.instagram.com/teslamotors/?hl=en" target="_blank"
           ><img src="./images/icon-instagram.svg" alt="ig" class="socialicons"
         /></a>
-        <a href="" target="_blank"
+        <a href="https://twitter.com/OhWonka" target="_blank"
           ><img src="./images/icon-twitter.svg" alt="tw" class="socialicons"
         /></a>
-        <a href="" target="_blank"
+        <a href="https://www.pinterest.com/ishraqfatin/" target="_blank"
           ><img src="./images/icon-pinterest.svg" alt="pin" class="socialicons"
         /></a>
       </div>
@@ -198,8 +205,15 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Fatin Ishraq</a>.
+        >. Coded by
+        <a
+          href="https://ishraqfatin.github.io/webDev/index.html"
+          target="_blank"
+          >Fatin Ishraq</a
+        >.
       </div>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
