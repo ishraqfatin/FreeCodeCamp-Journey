@@ -129,6 +129,8 @@ body {
   text-decoration: none;
   height: 300px;
   width: 300px;
+  min-width: 200px;
+  min-height: 200px;
 }
 .project-tile > div {
   display: flex;
@@ -226,10 +228,10 @@ body {
   }
 }
 @media only screen and (max-width: 610px) {
-  #navbar a{
+  #navbar a {
     font-size: 1.3rem;
   }
-  #navbar ul{
+  #navbar ul {
     justify-content: space-around;
   }
   #navbar ul li {
@@ -238,10 +240,10 @@ body {
   #projects {
     text-align: center;
   }
-  #projects h2{
+  #projects h2 {
     font-size: 1.5rem;
   }
-  #projects-header{
+  #projects-header {
     width: 100%;
   }
   #contacts {
