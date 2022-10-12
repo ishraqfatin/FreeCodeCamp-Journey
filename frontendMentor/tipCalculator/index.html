@@ -39,9 +39,9 @@
 					<p class="sectionHeader">
 						Bill <span class="errorMessage" id="billErr">Can't be empty</span>
 					</p>
-					<div class="inputField">
+					<div class="inputField" id="billInput">
 						<img src="./images/icon-dollar.svg" alt="icon-dollar" />
-						<input id="bill" type="number" min="0" required />
+						<input id="bill" type="number" step="any" placeholder="0" required />
 					</div>
 				</div>
 
@@ -61,6 +61,8 @@
 							class="tipButton"
 							id="customTip"
 							type="number"
+							step="any"
+							min="1"
 							placeholder="Custom"
 						/>
 					</div>
@@ -70,9 +72,15 @@
 						Number of People
 						<span class="errorMessage" id="peopleErr">Can't be zero</span>
 					</p>
-					<div class="inputField">
+					<div class="inputField" id="peopleInput">
 						<img src="./images/icon-person.svg" alt="icon-person" />
-						<input id="numOfPeople" type="number" min="1" required />
+						<input
+							id="numOfPeople"
+							type="number"
+							placeholder="0"
+							min="1"
+							required
+						/>
 					</div>
 				</div>
 			</div>
@@ -100,6 +108,8 @@
 				>Frontend Mentor</a
 			>. Coded by <a href="#">Fatin Ishraq</a>.
 		</div>
+
+		<script src="./index.js"></script>
 	</body>
 </html>
 
