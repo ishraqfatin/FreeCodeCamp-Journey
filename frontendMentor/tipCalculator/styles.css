@@ -15,8 +15,8 @@ input[type="number"] {
 }
 /* ----------------------- */
 
-body {
-	width: 100%;
+body, html {
+	width: 100vw;
 	height: 100vh;
 	background-color: hsl(185, 41%, 84%);
 	display: flex;
@@ -27,7 +27,12 @@ body {
 }
 
 #logo {
+	z-index: 2;
+	position: relative;
+	top: 0;
+	padding-top: 50px;
 	width: 100px;
+	/* height: 60px; */
 }
 
 #main {
@@ -212,8 +217,8 @@ input:focus::placeholder {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 600px) {
-	body {
-		height: 100vh;
+	body,html{
+		
 		background-color: hsl(185, 41%, 84%);
 		display: flex;
 		flex-direction: column;
@@ -222,7 +227,7 @@ input:focus::placeholder {
 		gap: 30px;
 	}
 	#logo {
-		margin: 300px 0 2% 0;
+		margin: 300px 0 10px 0;
 		/* width: 20%; */
 	}
 	#main {
