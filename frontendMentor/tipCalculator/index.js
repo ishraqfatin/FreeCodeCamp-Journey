@@ -1,4 +1,4 @@
-let tipSelected;
+var tipSelected;
 
 const bill = document.getElementById("bill");
 const people = document.getElementById("numOfPeople");
@@ -22,12 +22,31 @@ resetButton.disabled = true;
 
 this.onload = function () {
 	document.getElementById("billErr").style.visibility = "hidden";
+	document.getElementById("billErr").style.display = "none";
 	document.getElementById("peopleErr").style.visibility = "hidden";
+	document.getElementById("peopleErr").style.display = "none";
 	document.getElementById("tipErr").style.visibility = "hidden";
+	document.getElementById("tipErr").style.display = "none";
+
 	bill.value = people.value = tipCustom.value = null;
 };
 
 this.onclick = function () {
+	showResult();
+};
+
+bill.oninput = function () {
+	showResult();
+};
+
+people.oninput = function () {
+	showResult();
+};
+bill.onchange = function () {
+	showResult();
+};
+
+people.onchange = function () {
 	showResult();
 };
 
@@ -42,9 +61,11 @@ bill.onblur = function () {
 		document.getElementById("billInput").style.outline = "2px solid red";
 		document.getElementById("billInput").style.borderRadius = "5px";
 		document.getElementById("billErr").style.visibility = "visible";
+		document.getElementById("billErr").style.display = "block";
 	} else {
 		document.getElementById("billInput").style.outlineColor = "transparent";
 		document.getElementById("billErr").style.visibility = "hidden";
+		document.getElementById("billErr").style.display = "none";
 	}
 };
 
@@ -57,9 +78,11 @@ people.onblur = function () {
 		document.getElementById("peopleInput").style.outline = "2px solid red";
 		document.getElementById("peopleInput").style.borderRadius = "5px";
 		document.getElementById("peopleErr").style.visibility = "visible";
+		document.getElementById("peopleErr").style.display = "block";
 	} else {
 		document.getElementById("peopleInput").style.outlineColor = "transparent";
 		document.getElementById("peopleErr").style.visibility = "hidden";
+		document.getElementById("peopleErr").style.display = "none";
 	}
 };
 
@@ -68,7 +91,7 @@ function showResult() {
 	console.log(tipSelected);
 
 	// RESULT CALCULATIONS
-	if (bill.checkValidity() && people.checkValidity() && tipSelected != null) {
+	if (bill.checkValidity() && people.checkValidity() && tipSelected > 0) {
 		let tipval = (bill.value / people.value) * (tipSelected / 100);
 		let totalval = bill.value / people.value + tipval;
 		tipAmount.innerText = "$" + tipval.toFixed(2);
@@ -77,29 +100,28 @@ function showResult() {
 		resetButton.classList.remove("inactiveBtn");
 		resetButton.classList.add("activeBtn");
 		resetButton.disabled = false;
-
-		// RESET BUTTON CLICK
-		resetButton.addEventListener("click", function (e) {
-			e.preventDefault();
-
-			bill.value = people.value = "";
-			tipAmount.innerText = totalAmount.innerText = "$0.00";
-			resetButton.disabled = true;
-			resetButton.classList.add("inactiveBtn");
-			resetButton.classList.remove("activeBtn");
-
-			// REOMOVING CLASS NAME FOR VISUAL AID OF BUTTONS
-			tipButton.forEach((el) => {
-				el.classList.remove("active");
-				el.classList.remove("custom");
-				el.value = "";
-				tipSelected = null;
-			});
-		});
 	} else {
 		tipAmount.innerText = totalAmount.innerText = "$0.00";
 	}
 }
+
+// RESET BUTTON CLICK
+resetButton.addEventListener("click", function (e) {
+	e.preventDefault();
+
+	bill.value = people.value = "";
+	tipAmount.innerText = totalAmount.innerText = "$0.00";
+	resetButton.disabled = true;
+	resetButton.classList.add("inactiveBtn");
+	resetButton.classList.remove("activeBtn");
+	tipSelected = 0;
+
+	// REOMOVING CLASS NAME FOR VISUAL AID OF BUTTONS
+	tipButton.forEach((el) => {
+		el.classList.remove("active");
+		el.classList.remove("custom");
+	});
+});
 
 // BUTTON EVENTS
 tip5.addEventListener("click", function (e) {
