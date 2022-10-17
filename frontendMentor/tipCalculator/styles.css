@@ -16,6 +16,7 @@ input[type="number"] {
 /* ----------------------- */
 
 body {
+	width: 100%;
 	height: 100vh;
 	background-color: hsl(185, 41%, 84%);
 	display: flex;
@@ -210,7 +211,7 @@ input:focus::placeholder {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 	body {
 		height: 100vh;
 		background-color: hsl(185, 41%, 84%);
@@ -220,7 +221,7 @@ input:focus::placeholder {
 		align-items: center;
 		gap: 30px;
 	}
-	#logo{
+	#logo {
 		margin: 75% 0 30px 0;
 	}
 	#main {
@@ -238,13 +239,13 @@ input:focus::placeholder {
 		align-items: center;
 		justify-items: center;
 	}
-	.sectionHeader{
+	.sectionHeader {
 		font-size: 16px;
 	}
-	.inputField{
+	.inputField {
 		height: 30px;
 	}
-	.tipButton{
+	.tipButton {
 		font-size: 20px;
 		width: 70%;
 	}
@@ -275,10 +276,10 @@ input:focus::placeholder {
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
-	.content{
+	.content {
 		font-size: 25px;
 	}
-	#resetBtn{
+	#resetBtn {
 		font-size: 16px;
 	}
 }
