@@ -16,15 +16,15 @@ input[type="number"] {
 /* ----------------------- */
 
 body {
-	width: 100%;
 	height: 100vh;
 	background-color: hsl(185, 41%, 84%);
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
-	gap: 5%;
+	gap: 25px;
 }
+
 #logo {
 	width: 100px;
 }
@@ -94,8 +94,8 @@ body {
 input:focus {
 	outline: none;
 }
-input:focus::placeholder{
- color: transparent;
+input:focus::placeholder {
+	color: transparent;
 }
 .inputField:focus-within {
 	outline: 2px solid hsl(172, 67%, 45%);
@@ -128,7 +128,7 @@ input:focus::placeholder{
 	background-color: hsla(172, 67%, 45%, 0.5);
 	color: hsl(183, 100%, 15%);
 }
-.tipButton:focus {
+.active {
 	background-color: hsl(172, 67%, 45%);
 	color: hsl(183, 100%, 15%);
 }
@@ -144,6 +144,10 @@ input:focus::placeholder{
 }
 #customTip:focus::placeholder {
 	color: transparent;
+}
+.custom {
+	outline: 1px solid hsl(172, 67%, 45%);
+	border-radius: 5px;
 }
 
 #result {
@@ -181,7 +185,7 @@ input:focus::placeholder{
 	font-weight: 700;
 	color: hsl(184, 14%, 56%);
 }
-#resetBtn {
+.activeBtn {
 	font-size: 24px;
 	font-weight: 700;
 	color: hsl(183, 100%, 15%);
@@ -190,7 +194,94 @@ input:focus::placeholder{
 	border-radius: 5px;
 	padding: 5px;
 }
-#resetBtn:hover {
+.inactiveBtn {
+	background-color: hsla(172, 67%, 45%, 0.295);
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 24px;
+	font-weight: 700;
+	color: hsl(183, 100%, 15%);
+}
+.activeBtn:hover {
 	cursor: pointer;
 	background-color: hsl(172, 58%, 71%);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+	body {
+		height: 100vh;
+		background-color: hsl(185, 41%, 84%);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+	}
+	#logo{
+		margin: 75% 0 30px 0;
+	}
+	#main {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		max-width: unset;
+		max-height: unset;
+		min-width: unset;
+		width: 100%;
+		height: 100%;
+		padding: 25px;
+		gap: 20px;
+		border-radius: 20px 20px 0 0;
+		align-content: center;
+		align-items: center;
+		justify-items: center;
+	}
+	.attribution {
+		display: none;
+	}
+	.sectionHeader{
+		font-size: 16px;
+	}
+	.inputField{
+		height: 30px;
+	}
+	.tipButton{
+		font-size: 20px;
+		width: 70%;
+	}
+	.tips {
+		/* background-color: burlywood; */
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		justify-items: center;
+		grid-auto-flow: row;
+		gap: 5px;
+	}
+	.inputField input {
+		font-size: 16px;
+		width: 100%;
+		border: none;
+		text-align: right;
+		background-color: transparent;
+	}
+	#result {
+		height: 100%;
+		width: 100%;
+		background-color: hsl(183, 100%, 15%);
+		border-radius: 20px;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.content{
+		font-size: 25px;
+	}
+	#resetBtn{
+		font-size: 16px;
+	}
 }

@@ -32,7 +32,9 @@
 		</style>
 	</head>
 	<body>
-		<img id="logo" src="./images/logo.svg" alt="logo" />
+		
+			<img id="logo" src="./images/logo.svg" alt="logo" />
+		
 		<main id="main">
 			<div id="calculator">
 				<div id="billSection">
@@ -41,7 +43,13 @@
 					</p>
 					<div class="inputField" id="billInput">
 						<img src="./images/icon-dollar.svg" alt="icon-dollar" />
-						<input id="bill" type="number" step="any" placeholder="0" required />
+						<input
+							id="bill"
+							type="number"
+							step="any"
+							placeholder="0"
+							required
+						/>
 					</div>
 				</div>
 
@@ -52,11 +60,11 @@
 						>
 					</p>
 					<div class="tips">
-						<button class="tipButton" id="five">5%</button>
-						<button class="tipButton" id="ten">10%</button>
-						<button class="tipButton" id="fifteen">15%</button>
-						<button class="tipButton" id="twentyfive">25%</button>
-						<button class="tipButton" id="fifty">50%</button>
+						<button class="tipButton" id="five" value="5">5%</button>
+						<button class="tipButton" id="ten" value="10">10%</button>
+						<button class="tipButton" id="fifteen" value="15">15%</button>
+						<button class="tipButton" id="twentyfive" value="25">25%</button>
+						<button class="tipButton" id="fifty" value="50">50%</button>
 						<input
 							class="tipButton"
 							id="customTip"
