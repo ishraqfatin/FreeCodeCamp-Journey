@@ -238,9 +238,6 @@ input:focus::placeholder {
 		align-items: center;
 		justify-items: center;
 	}
-	.attribution {
-		/* display: none; */
-	}
 	.sectionHeader{
 		font-size: 16px;
 	}
