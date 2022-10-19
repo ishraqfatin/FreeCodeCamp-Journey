@@ -91,11 +91,11 @@ body {
   margin: 0 auto;
 }
 #projects-header {
-  width: 90%;
+  width: 100vw;
   margin-top: 50px;
   text-align: center;
-  background-color: #ffffffd5;
-  border-radius: 5px 35px;
+  background-color: #ffffff8a;
+  /* border-radius: 5px 35px; */
   padding: 10px;
   box-shadow: 3px 15px 10px rgba(20, 2, 71, 0.466);
 }
@@ -190,7 +190,7 @@ body {
 }
 #contacts-header {
   color: #dddddd;
-  font-family: Tahoma;
+  font-family: "Roboto Mono";
   text-align: center;
 }
 #contacts-header h2 {
@@ -248,15 +248,23 @@ body {
   #projects h2 {
     font-size: 1.5rem;
   }
-  #projects-header {
-    width: 100%;
-  }
+  
   #contacts {
     height: 90vh;
   }
   #contacts-links {
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
     align-items: center;
+  }
+  #contacts-links a{
+    font-size: 1.5rem;
+  }
+  #contacts-header h2 {
+    font-size: 1.6rem;
+  }
+  #contacts-header p {
+    margin-top: 10px;
+    font-size: 1rem;
   }
 }
