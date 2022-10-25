@@ -86,7 +86,8 @@ html {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	/* background-color: aqua; */
+	background-color: hsla(185, 41%, 84%, 0.158);
+	border-radius: 5px;
 	padding: 2px;
 }
 .inputField img {
@@ -143,9 +144,10 @@ input:focus::placeholder {
 	color: hsl(183, 100%, 15%);
 }
 #customTip {
-	background-color: white;
+	background-color: hsla(185, 41%, 84%, 0.158);
 	color: hsl(183, 100%, 15%);
 	text-align: center;
+	border-radius: 5px;
 }
 #customTip:focus {
 	outline: 1px solid hsl(172, 67%, 45%);

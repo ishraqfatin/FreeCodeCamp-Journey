@@ -91,7 +91,7 @@ function showResult() {
 	console.log(tipSelected);
 
 	// RESULT CALCULATIONS
-	if (bill.checkValidity() && people.checkValidity() && tipSelected > 0) {
+	if (bill.checkValidity() && people.checkValidity() && tipSelected >= 0) {
 		let tipval = (bill.value / people.value) * (tipSelected / 100);
 		let totalval = bill.value / people.value + tipval;
 		tipAmount.innerText = "$" + tipval.toFixed(2);
@@ -192,7 +192,8 @@ tipCustom.addEventListener("click", function (e) {
 
 	tipCustom.addEventListener("change", function (e) {
 		e.preventDefault();
-		if (this.value > 0) {
+
+		if (this.value >= 0) {
 			this.classList.add("custom");
 			tipSelected = this.value;
 		} else {
