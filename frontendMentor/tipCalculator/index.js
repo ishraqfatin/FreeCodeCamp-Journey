@@ -189,6 +189,9 @@ tipCustom.addEventListener("click", function (e) {
 			tipCustom.classList.remove("custom");
 		}
 	});
+	if (this.value != "") {
+		tipSelected = this.value;
+	}
 
 	tipCustom.addEventListener("change", function (e) {
 		e.preventDefault();

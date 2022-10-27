@@ -143,13 +143,26 @@ input:focus::placeholder {
 	background-color: hsl(172, 67%, 45%);
 	color: hsl(183, 100%, 15%);
 }
+#customInput {
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: hsla(185, 41%, 84%, 0.158);
+	color: hsl(183, 100%, 15%);
+	text-align: center;
+	border-radius: 5px;
+	padding-right: 10px;
+	width: 100%;
+	height: 100%;
+}
 #customTip {
+	font-size: 18px;
+	width: 100%;
 	background-color: hsla(185, 41%, 84%, 0.158);
 	color: hsl(183, 100%, 15%);
 	text-align: center;
 	border-radius: 5px;
 }
-#customTip:focus {
+#customInput:focus-within {
 	outline: 1px solid hsl(172, 67%, 45%);
 	border-radius: 5px;
 	text-align: right;
@@ -296,5 +309,8 @@ input:focus::placeholder {
 	}
 	#resetBtn {
 		font-size: 16px;
+	}
+	#customInput {
+		width: 70%;
 	}
 }
