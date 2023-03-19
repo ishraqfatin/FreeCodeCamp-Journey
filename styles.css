@@ -595,7 +595,7 @@ a:hover {
 		align-items: center;
 		justify-content: center;
 		width: 85%;
-		height: 70vh;
+		/* height: 70vh; */
 		transform-origin: top right;
 	}
 	.menulist {
@@ -768,7 +768,7 @@ a:hover {
 		align-items: center;
 		justify-content: center;
 		width: 85%;
-		height: 70vh;
+		/* height: 70vh; */
 		transform-origin: top right;
 	}
 	.menulist {
